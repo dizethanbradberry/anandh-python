@@ -1,0 +1,24 @@
+# Program to find anagrams in a list
+i=0
+
+def anagrams(f):
+	s=[]
+	i,j=0,0
+	if s=[]:
+		s.append([f[i])
+	else:
+		for i in range(len(s)):
+			for j in range len(s[i]):
+				
+	
+
+anagrams(['eat', 'ate','tea','soup'])
+
+
+
+
+	
+print s
+		
+
+

@@ -1,0 +1,20 @@
+
+import sys
+import os
+def pyfiles(files):
+	for f in files:
+		if '.py' in f:
+			yield f
+	
+def findline(pyfile):
+	dict={}
+	for f in pyfile:
+		dict[f]=len(open(f).readlines())
+	return dict
+def main(dirt):		
+	files=os.listdir(dirt)
+	pyfile=pyfiles(files)
+
+main(sys.argv[1])
+
+	

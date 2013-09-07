@@ -1,0 +1,21 @@
+# Program to wrap length of line by a width without breaking a word
+
+import sys
+filename=sys.argv[1]
+c=int(sys.argv[2])
+f=open(filename,'r')
+l=[]
+l.extend(f.readlines())
+for i in l:
+ new=i
+ while len(new)>30 :
+   if new[29]!=' ':
+    for j in range(29):
+     if new[:29][-j]==' ':
+      print new[:29+(-j)]
+      break;
+    new=new[30+(-j):]
+   else:
+     print new[:29]
+     new=new[30:]
+ print new[:-1]

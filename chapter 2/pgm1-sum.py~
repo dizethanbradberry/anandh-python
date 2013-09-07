@@ -1,0 +1,13 @@
+# Program to provide an implementation for built in function 'sum'
+def sum(l):
+ sum=0
+ for i in l:
+  sum=sum+i
+ return sum
+n=raw_input("Enter the length of list:")
+l=[]
+for i in range(int(n)):
+ l.append(int((raw_input("Enter the element %d:" % i))))
+print list =,l
+print 'sum =',sum(l)
+

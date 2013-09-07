@@ -1,0 +1,9 @@
+# Program to list all the files in the given directory along with their length and last modification time
+
+import os
+import sys
+dirt=sys.argv[1]
+filenames=os.listdir(os.path.abspath(dirt))
+print 'filename','\t','Length\tLast modification'
+for filename in filenames:
+	print filename,'\t\t',len(filename),'\t',os.stat(os.path.abspath(dirt+'/'+filename))[8]

@@ -1,0 +1,16 @@
+# Program to do the reverse of flatten_dict()
+
+def unflatten_dict(a,result=None):
+	if result==None:
+		result={}
+	for i,j in a.items():
+		k={}
+		if '.' in i:
+			for k in len(i):
+				
+		else:
+			result[i]=j
+	return result
+
+print unflatten_dict({'a': 1, 'b.x': 2, 'b.y': 3, 'c': 4})
+

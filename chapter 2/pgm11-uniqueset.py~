@@ -1,0 +1,12 @@
+# Program to implement unique function using sets
+def unique(l,k):
+  for i in l:
+  if a!='' and i not in a:
+   a.append(i)
+ return a
+n=raw_input("Enter the length of list:")
+l=[]
+for i in range(int(n)):
+ l.append(raw_input("Enter the element %d:" % i))
+print 'Origial list=',l
+print 'unique(',l,')=',unique(l,k)

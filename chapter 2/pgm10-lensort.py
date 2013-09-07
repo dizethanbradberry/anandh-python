@@ -1,0 +1,11 @@
+# Program to sort list of strings by number
+
+def lensort(l):
+ l.sort(key =lambda x: len(x))
+ return l
+n=raw_input("Enter the length of list:")
+l=[]
+for i in range(int(n)):
+ l.append(raw_input("Enter the string %d:" % i))
+print 'Original list=',l
+print 'lensort(',l,')=',lensort(l)

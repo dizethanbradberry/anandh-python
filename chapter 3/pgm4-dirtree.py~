@@ -1,0 +1,25 @@
+# Program to print directory tree
+
+import os
+import sys
+dirt=sys.argv[1]
+print dirt
+a='|--'
+b='|   '
+i=0
+k='.'
+def dirttree(dirt,i):
+	filenames=os.listdir(os.path.abspath(dirt))
+	for filename in filenames:
+		if  k in filename:
+			if filename==filenames[-1]:
+				print b*i+'\--',filename
+			else:
+        			print b*i+'|--',filename
+		else:
+			print b*i+'|--',filename
+			dirt=dirt+'/'+filename
+			dirttree(dirt,i+1)
+dirttree(dirt,i)
+
+

@@ -1,0 +1,4 @@
+# Program to compute all words formed by a single mutation in given word
+
+def delete(w):
+ return [x for i in

@@ -1,0 +1,32 @@
+# Program to find anagrams in a list
+
+def anagrams(f,s,w):
+	if s==[]:
+		s.append([w])
+	else:
+		for i in range(len(s)):
+			for j in range(len(s[i])):
+				if f in s[i][i]:
+					s[i][j].extend(w)
+
+def char_frequency(l):
+	s=[]
+	d=1
+	for w in l:
+		f={}
+		for i in range(len(w)):
+			f[w[i]]=f.get(w[i], 0)+1
+		i=i+1
+		for i,j in f.items():
+			print i,j
+
+char_frequency(['eat', 'ate', 'done', 'tea', 'soup', 'node'])
+
+
+
+s=[]
+	
+print s
+		
+
+

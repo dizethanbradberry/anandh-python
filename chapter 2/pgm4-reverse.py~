@@ -1,0 +1,14 @@
+# Program to reverse a list without slicing
+def reverse(l):
+ reverse=[]
+ for i in range(len(l)-1,-1,-1):
+  reverse.append(l[i])
+ return reverse
+print 'Testing phase--Use integer list 
+n=raw_input("Enter the length of list:")
+l=[]
+for i in range(int(n)):
+ l.append(int((raw_input("Enter the element %d:" % i))))
+print 'Original list',l
+print 'Reversed list',reverse(l)
+

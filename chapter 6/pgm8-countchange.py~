@@ -1,0 +1,6 @@
+# Program to implement a function count_change to count the number of ways to change any given amount
+
+
+def count_change(l):
+	
+		
